@@ -1,0 +1,64 @@
+body {
+  // height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --red-color: #ff0000;
+  --green-color: #008000;
+  --blue-color: #0000ff;
+  --yellow-color: #edbd3f;
+  --hero-btn-color: #e3c9b2;
+  --input-border : #858585;
+  --about-bg: rgba(227, 201, 178, 0.54);
+  --bg-color: rgba(182, 153, 123, 0.77);
+  --img-overlay: rgba(227, 201, 178, 0.60);
+  --gradientSupport: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+}
+
+@import "about.scss";
+@import "blogs.scss";
+@import "blog.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "home.scss";
+@import "portfolio.scss";
+@import "product.scss";
+@import "products.scss";
+@import "service.scss";
+@import "services.scss";
+@import "mixins.scss";
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  height: calc(100vh - 9rem);
+}
+
+.btn {
+  background: var(--yellow-color);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}

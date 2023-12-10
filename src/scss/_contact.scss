@@ -1,0 +1,104 @@
+.contact.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .contact_left_side {
+    flex: 1;
+    img {
+      height: calc(100vh - 5rem);
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contact_right_side {
+    flex: 1;
+    .contact_form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1rem;
+      }
+
+      .input_container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+
+        label {
+          text-transform: capitalize;
+        }
+
+        .input_field {
+          width: 100%;
+          display: flex;
+          border: 1px solid var(--input-border);
+          border-radius: 0.2rem;
+          padding: 0.8rem;
+
+          #message {
+            height: 10rem;
+          }
+
+          input,
+          textarea {
+            padding: 0 0.5rem;
+            width: 100%;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+
+      .contact.btn {
+        border: none;
+        border-radius: 0.2rem;
+        width: 90%;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact.container
+    .contact_right_side
+    .contact_form
+    .input_container
+    .input_field
+    #message {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact.container {
+    padding: 2rem;
+    .contact_left_side {
+      display: none;
+    }
+
+  .contact_right_side .contact_form .input_container .input_field #message {
+    height: 5rem;
+  }
+  }
+
+  #message {
+    height: 5rem;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin flexStart {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
