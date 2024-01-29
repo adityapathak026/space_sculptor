@@ -47,15 +47,21 @@
   }
 
   @media (max-width: 768px) {
+
+    justify-content: space-around;
+
+    .logo_container{
+      margin: 0 1rem;
+    }
+
     .desktop.nav_links {
       display: none;
     }
 
     .menu {
-      height: 2rem;
-      width: 2rem;
+      height: 2.5rem;
+      width: 2.5rem;
       display: block;
-      margin: 0 2rem;
       border: 2px solid var(--black-color);
       border-radius: 5px;
       cursor: pointer;

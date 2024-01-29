@@ -40,6 +40,7 @@ const Header = () => {
             key={index}
             to={link.path}
             className={({ isActive }) => (isActive ? "active link" : "link")}
+            onClick={()=> setMobileView(false)}
           >
             {link.name}
           </NavLink>

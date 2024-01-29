@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    z-index: 999;
+    z-index: 998;
 
     img {
       height: 3rem;
@@ -61,15 +61,19 @@
   }
 }
 
-@media (max-width: 768px) {
-  .hero_container .hero_content h1 {
-    font-size: 2.5rem;
-    width: 35%;
+@media (max-width: 540px) {
+  .hero.container {
+  .hero_content h1 {
+    width: auto;
+    padding: 1rem;
+  }
+  .view_projects_container{
+    width: 100%;
+    padding: 0;
+
+    .line{
+      display: none;
+    }
   }
 }
-
-@media (max-width: 425px) {
-  .hero_container .hero_content h1 {
-    width: 100%;
-  }
 }
