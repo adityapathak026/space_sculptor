@@ -7,11 +7,16 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import Service from "./Service";
-import Products from "../pages/Products";
 import Blogs from "../pages/Blogs";
 import NotFound from "./NotFound";
 import Blog from "./Blog";
 import Services from "../pages/Services";
+import Categories from "../pages/Categories";
+import ProductsContainer from "../containers/ProductsContainer";
+import ProductDetails from "./ProductDetails";
+import Login from "./Login";
+import SignUp from "./SignUp";
+import ResetPassword from "./ResetPassword";
 
 export const routes = createBrowserRouter([
   {
@@ -23,6 +28,14 @@ export const routes = createBrowserRouter([
       </>
     ),
     children: [
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
       {
         path: "/",
         element: <Home />,
@@ -44,8 +57,12 @@ export const routes = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: "/products",
-        element: <Products />,
+        path: "/categories",
+        element: <Categories />,
+      },
+      {
+        path: "/categories/:cat",
+        element: <ProductsContainer />,
       },
       {
         path: "/blogs",
@@ -53,7 +70,19 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/blog/:id",
-        element: <Blog/>,
+        element: <Blog />,
+      },
+      {
+        path: "/productDetails/:name",
+        element: <ProductDetails />,
+      },
+      {
+        path: "/reset_password",
+        element: <ResetPassword />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

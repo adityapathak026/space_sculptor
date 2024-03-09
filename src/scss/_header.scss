@@ -1,6 +1,7 @@
 .header_container {
   position: sticky;
   top: 0;
+  background: var(--alice-blue);
   height: 4rem;
   width: 100%;
   display: flex;
@@ -21,7 +22,7 @@
     justify-content: space-between;
     gap: 1rem;
     margin: 0 2rem;
-  }
+}
 
   .link {
     font-size: 1rem;
@@ -45,6 +46,18 @@
   .menu {
     display: none;
   }
+
+  .cart_count{
+    cursor: pointer;
+    svg {
+      color: var(--svg-color);
+    }
+    strong{
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+    }
+}
 
   @media (max-width: 768px) {
 

@@ -14,19 +14,13 @@ export const navLinks = [
   { path: "/about", name: "About" },
   { path: "/portfolio", name: "Portfolio" },
   { path: "/services", name: "Services" },
-  { path: "/products", name: "Products" },
+  // { path: "/products", name: "Products" },
   { path: "/contact", name: "Contact" },
   { path: "/blogs", name: "Blogs" },
+  { path: "/categories", name: "Categories" },
 ];
 
 export const year = new Date().getFullYear();
-
-export const initialFormData = {
-  name: "",
-  email: "",
-  mobile: "",
-  message: "",
-};
 
 export const contactForm = [
   {
@@ -39,7 +33,7 @@ export const contactForm = [
   },
   {
     type: "email",
-    id: "enail",
+    id: "email",
     name: "email",
     placeholder: "Type your email",
     required: true,
@@ -93,12 +87,12 @@ export const blogsData = [
   },
 ];
 
-export const products = [
-  { id: 1, img: about, category: "Modular Kitchen" },
-  { id: 2, img: about, category: "Interior Turnkey" },
-  { id: 3, img: about, category: "Home Decor" },
-  { id: 4, img: about, category: "Modular Kitchen" },
-  { id: 5, img: about, category: "Modular Kitchen" },
+export const categories = [
+  { id: 1, img: about, cat: "Modular Kitchen" },
+  { id: 2, img: about, cat: "Interior Turnkey" },
+  { id: 3, img: about, cat: "Home Decor" },
+  { id: 4, img: about, cat: "Modular Kitchen" },
+  { id: 5, img: about, cat: "Modular Kitchen" },
 ];
 
 export const servicesData = [
@@ -137,3 +131,76 @@ export const portData = [
     img: p4,
   },
 ];
+
+export const products = [
+  {
+    id: 1,
+    name: 'Product 1',
+    description: 'Description of product 1',
+    price: 10.99,
+    image: s1,
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    description: 'Description of product 2',
+    price: 19.99,
+    image: p1
+  },
+  {
+    id: 3,
+    name: 'Product 1',
+    description: 'Description of product 1',
+    price: 10.99,
+    image: s1,
+  },
+  {
+    id: 4,
+    name: 'Product 2',
+    description: 'Description of product 2',
+    price: 19.99,
+    image: p1
+  },
+  {
+    id: 5,
+    name: 'Product 1',
+    description: 'Description of product 1',
+    price: 10.99,
+    image: s1,
+  },
+  {
+    id: 6,
+    name: 'Product 2',
+    description: 'Description of product 2',
+    price: 19.99,
+    image: p1
+  },
+  {
+    id: 7,
+    name: 'Product 1',
+    description: 'Description of product 1',
+    price: 10.99,
+    image: s1,
+  },
+  {
+    id: 8,
+    name: 'Product 2',
+    description: 'Description of product 2',
+    price: 19.99,
+    image: p1
+  },
+  {
+    id: 9,
+    name: 'Product 1',
+    description: 'Description of product 1',
+    price: 10.99,
+    image: s1,
+  },
+];
+
+export const prodDetails = {
+  prodId: 1,
+  prodName: "Aditya Pathak",
+  prodPrice: 1231,
+  prodDesc: "Self-Timer | Type C and Mini HDMI | 9 Auto Focus Points | 35x Optical Zoom., Effective Pixels: 18 MP APS-C CMOS sensor-which is 25 times larger than a typical Smartphone sensor., Wi-Fi | Full HD | Video Recording at 1080 p on 30fps."
+}

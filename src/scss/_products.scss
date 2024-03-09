@@ -1,42 +1,67 @@
-.products.container {
-  padding: 2rem;
-  margin: 0 auto;
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start; /* Align content to the start */
+  padding: 10px;
+}
 
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+.product-card {
+  border-radius: 5px;
+  margin: 10px 10px 15px 10px;
+  width: calc(50% - 140px); /* Two cards per row by default */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
 
-    a{
-        font-size: 1.5rem;
-        color: var(--black-color);
-    }
+.product-image {
+  width: 100%; /* Adjusted to fit within the card container */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  margin-bottom: 10px;
+}
 
-    .prod_content {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      &:hover .prod_category {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out;
-        cursor: pointer;
-      }
+.product-info {
+  margin-bottom: 10px;
+}
 
-      .prod_category {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: none;
-        background-color: var(--img-overlay);
-        text-align: center;
-      }
-    }
+.product-price {
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 1440px) {
+  .product-card {
+    width: calc(24% - 6px); /* Four cards per row for medium screens */
   }
 }
+
+@media (max-width: 1240px) {
+  .product-card {
+    width: calc(33.3333% - 20px); /* Three cards per row for medium screens */
+  }
+}
+
+@media (max-width: 540px) {
+  .product-card {
+    width: calc(50% - 20px); /* Three cards per row for medium screens */
+  }
+}
+
+@media (max-width: 430px) {
+  .product-card {
+    width: calc(100%); /* Three cards per row for medium screens */
+  }
+}
+
+
