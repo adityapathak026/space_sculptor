@@ -21,6 +21,7 @@ import {
     CONFIRM_PASS_MESSAGE,
     PASSWORD_VALIDATIONS,
   } from "../common/validations";
+import Email from "./Email";
   
   const ResetPassword = ({ formTitle }) => {
     const navigate = useNavigate();
@@ -69,6 +70,8 @@ import {
                 </li>
               </ul>
             </div>
+
+            <Email register={register} errors={errors} />
   
             <InputField
               icon={<GoKey />}
